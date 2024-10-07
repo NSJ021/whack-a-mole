@@ -2,27 +2,36 @@
 // Create the application helper and add its render target to the page
 const app = new PIXI.Application();
 
-
 const setup = async () => {
   // Set the game size based on the window size.
   // These work well on Robs machine!
   // TODO: Nathan to test on his machine
-  let gameWidth = window.innerWidth /2;
-  let gameHeight = gameWidth / 1.5;
+  let surroundWidth = window.innerWidth / 2;
+  let surroundHeight = window.innerHeight / 1.5;
   // TODO: These need to be altered based on if the screen is a small mobile device. 
 
-  // let gameWidth = 640;
-  // let gameHeight = 360; 
+  let canvasWidth = surroundWidth - 32;
+  let canvasHeight = surroundHeight - 135; 
 
   await app.init({
-    backgroundAlpha: 0.5,
-    background: '#00000f',
-    width: gameWidth,
-    height: gameHeight
+    //backgroundAlpha: 0.5,
+    background: '#0000ff',
+    width: canvasWidth,
+    height: canvasHeight
+
   });
+
+  const gameSurround = document.getElementById('gameSurround');
+  gameSurround.style.minWidth = `${surroundWidth}px`;
+  gameSurround.style.maxWidth = `${surroundWidth}px`;
+  gameSurround.style.minHeight = `${surroundHeight}px`;
+  gameSurround.style.maxHeight = `${surroundHeight}px`;
+  
   const gameBoard = document.getElementById('gameBoard');
-  gameBoard.style.width = `${gameWidth}px`;
-  gameBoard.style.height = `${gameHeight}px`;
+  gameBoard.style.minWidth = canvasWidth;
+  gameBoard.style.minHeight = canvasHeight;
+  gameBoard.style.maxWidth = canvasWidth;
+  gameBoard.style.maxHeight = canvasHeight;
   gameBoard.appendChild(app.view);
 
 }
