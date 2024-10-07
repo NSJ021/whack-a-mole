@@ -1,0 +1,11 @@
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+#gameBoard{
+    margin: 0 auto;
+}

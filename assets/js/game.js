@@ -6,14 +6,26 @@ const app = new PIXI.Application();
 
 
 const setup = async () => {
+  // Set the game size based on the window size.
+  // These work well on Robs machine!
+  // TODO: Nathan to test on his machine
+  let gameWidth = window.innerWidth /2;
+  let gameHeight = gameWidth / 1.5;
+  // TODO: These need to be altered based on if the screen is a small mobile device. 
+
+  // let gameWidth = 640;
+  // let gameHeight = 360; 
 
   await app.init({
     backgroundAlpha: 0.5,
     background: '#0000ff',
-    width: 640,
-    height: 360
+    width: gameWidth,
+    height: gameHeight
   });
-  document.body.appendChild(app.view);
+  const gameBoard = document.getElementById('gameBoard');
+  gameBoard.style.width = `${gameWidth}px`;
+  gameBoard.style.height = `${gameHeight}px`;
+  gameBoard.appendChild(app.view);
 }
 
 const preload = async () => {
