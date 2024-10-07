@@ -3,9 +3,28 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    background-image: url('../images/page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+#gameSurround {
+    margin: 0 auto; 
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    position: relative;
+}
+
+#gameSurround > img { 
+    width: 100%;
+}
 
 #gameBoard{
+    background-color: blue;
     margin: 0 auto;
+    position: absolute;
+    left: 14px;
+    top: 33px;
 }
