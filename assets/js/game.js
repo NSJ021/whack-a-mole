@@ -1,4 +1,5 @@
-console.log('Hello');
+// import { Application, Assets, Sprite } from 'pixi.js';
+import { mainMenu } from './mainMenu';
 
 
 // Create the application helper and add its render target to the page
@@ -67,5 +68,7 @@ const gameLoop = () => {
 (async () => {
   await setup();
   await preload();
+
+  mainMenu(app);
 
 })();
