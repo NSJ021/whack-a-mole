@@ -15,7 +15,7 @@ const setup = async () => {
 
   await app.init({
     //backgroundAlpha: 0.5,
-    background: '#0000ff',
+    background: '#8D6E26',
     width: canvasWidth,
     height: canvasHeight
 

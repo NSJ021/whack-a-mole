@@ -1,38 +1,58 @@
 
-function mainMenu(app){
-    console.log("Test");
-    const rectangle = new PIXI.Graphics();
 
-    rectangle.rect(100, 100, 760, 150);
+  // TODO: Robertooo, none of this is responsive and breaks easily with screen-size changes
 
-    rectangle.fill({
-        color: 0xffea00,
-        alpha: 0.9
-    });
+async function mainMenu(app) {
 
-    app.stage.addChild(rectangle);
+    // Main Menu Banner / Top Box --------------------------------------
+
+    // Load the texture asynchronously
+    const txtTopMenu = await PIXI.Assets.load('assets/images/paper_panel_681_x_150.png');
+
+    // Create the sprite using the loaded texture
+    const top_MenuBar = new PIXI.Sprite(txtTopMenu);
+
+    // Set the anchor to the center
+    top_MenuBar.anchor.set(0.5);
+
+    // Set the position of the sprite
+    top_MenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    top_MenuBar.y = 100; // Position it 100 pixels from the top
+
+    // Add the sprite to the stage
+    app.stage.addChild(top_MenuBar);
 
 
-    const triangle = new PIXI.Graphics()
-    .poly([
-        75, 50,
-        100, 300,
-        160, 300
-    ])
-    .fill({
-        color: 0x8f5ff2
-    })
-    .stroke({
-        color: 0xf5fa2f
-    });
-    app.stage.addChild(triangle);
+    // Main Menu Box, containing play buttons etc  --------------------------------------
+
+    const txtMainMenu = await PIXI.Assets.load('assets/images/paper_panel_360_x_240.png');
+    const main_MenuBar = new PIXI.Sprite(txtMainMenu);
+
+    main_MenuBar.anchor.set(0.5);
+    main_MenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    main_MenuBar.y = 325; // Position it 100 pixels from the top
+
+    app.stage.addChild(main_MenuBar);
+
+    // Play Button
+
+    const txtPlayBtn = await PIXI.Assets.load('assets/images/play-unpressed.png');
+    const mainMenu_PlayBtn = new PIXI.Sprite(txtPlayBtn);
+
+    mainMenu_PlayBtn.anchor.set(0.5);
+    mainMenu_PlayBtn.x = app.view.width / 2; // Horizontally center the sprite
+    mainMenu_PlayBtn.y = 325; // Position it 100 pixels from the top
+    mainMenu_PlayBtn.scale.set(0.2);  // Uniform scaling to 75%
+
+
+    app.stage.addChild(mainMenu_PlayBtn);
 
 
 }
 
+
+
+// }
+
 // loads mainMenu into global to allow game.js access
- window.mainMenu = mainMenu;
-    
-
-
-
+window.mainMenu = mainMenu;
