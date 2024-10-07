@@ -1,33 +1,52 @@
-// function mainMenu(app){
-// console.log("Test");
 
+
+  // TODO: Robertooo, none of this is responsive and breaks easily with screen-size changes
 
 async function mainMenu(app) {
+
+    // Main Menu Banner / Top Box --------------------------------------
+
     // Load the texture asynchronously
-    const textureTopMenu = await PIXI.Assets.load('assets/images/paper_panel_681_x_150.png');
+    const txtTopMenu = await PIXI.Assets.load('assets/images/paper_panel_681_x_150.png');
 
     // Create the sprite using the loaded texture
-    const topMenuBar = new PIXI.Sprite(textureTopMenu);
+    const top_MenuBar = new PIXI.Sprite(txtTopMenu);
 
     // Set the anchor to the center
-    topMenuBar.anchor.set(0.5);
+    top_MenuBar.anchor.set(0.5);
 
     // Set the position of the sprite
-    topMenuBar.x = app.view.width / 2; // Horizontally center the sprite
-    topMenuBar.y = 100; // Position it 100 pixels from the top
+    top_MenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    top_MenuBar.y = 100; // Position it 100 pixels from the top
 
     // Add the sprite to the stage
-    app.stage.addChild(topMenuBar);
+    app.stage.addChild(top_MenuBar);
 
 
-    const textureMainMenu = await PIXI.Assets.load('assets/images/paper_panel_360_340.png');
-    const mainMenuBar = new PIXI.Sprite(textureMainMenu);
+    // Main Menu Box, containing play buttons etc  --------------------------------------
 
-    mainMenuBar.anchor.set(0.5);
-    mainMenuBar.x = app.view.width / 2; // Horizontally center the sprite
-    mainMenuBar.y = 250; // Position it 100 pixels from the top
+    const txtMainMenu = await PIXI.Assets.load('assets/images/paper_panel_360_x_240.png');
+    const main_MenuBar = new PIXI.Sprite(txtMainMenu);
 
-    app.stage.addChild(mainMenuBar);
+    main_MenuBar.anchor.set(0.5);
+    main_MenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    main_MenuBar.y = 325; // Position it 100 pixels from the top
+
+    app.stage.addChild(main_MenuBar);
+
+    // Play Button
+
+    const txtPlayBtn = await PIXI.Assets.load('assets/images/play-unpressed.png');
+    const mainMenu_PlayBtn = new PIXI.Sprite(txtPlayBtn);
+
+    mainMenu_PlayBtn.anchor.set(0.5);
+    mainMenu_PlayBtn.x = app.view.width / 2; // Horizontally center the sprite
+    mainMenu_PlayBtn.y = 325; // Position it 100 pixels from the top
+    mainMenu_PlayBtn.scale.set(0.2);  // Uniform scaling to 75%
+
+
+    app.stage.addChild(mainMenu_PlayBtn);
+
 
 }
 
