@@ -16,9 +16,19 @@ async function mainMenu(app) {
     topMenuBar.x = app.view.width / 2; // Horizontally center the sprite
     topMenuBar.y = 100; // Position it 100 pixels from the top
 
-
     // Add the sprite to the stage
     app.stage.addChild(topMenuBar);
+
+
+    const textureMainMenu = await PIXI.Assets.load('assets/images/paper_panel_360_340.png');
+    const mainMenuBar = new PIXI.Sprite(textureMainMenu);
+
+    mainMenuBar.anchor.set(0.5);
+    mainMenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    mainMenuBar.y = 250; // Position it 100 pixels from the top
+
+    app.stage.addChild(mainMenuBar);
+
 }
 
 
