@@ -1,38 +1,29 @@
-
-function mainMenu(app){
-    console.log("Test");
-    const rectangle = new PIXI.Graphics();
-
-    rectangle.rect(100, 100, 760, 150);
-
-    rectangle.fill({
-        color: 0xffea00,
-        alpha: 0.9
-    });
-
-    app.stage.addChild(rectangle);
+// function mainMenu(app){
+// console.log("Test");
 
 
-    const triangle = new PIXI.Graphics()
-    .poly([
-        75, 50,
-        100, 300,
-        160, 300
-    ])
-    .fill({
-        color: 0x8f5ff2
-    })
-    .stroke({
-        color: 0xf5fa2f
-    });
-    app.stage.addChild(triangle);
+async function mainMenu(app) {
+    // Load the texture asynchronously
+    const textureTopMenu = await PIXI.Assets.load('assets/images/paper_panel_681_x_150.png');
+
+    // Create the sprite using the loaded texture
+    const topMenuBar = new PIXI.Sprite(textureTopMenu);
+
+    // Set the anchor to the center
+    topMenuBar.anchor.set(0.5);
+
+    // Set the position of the sprite
+    topMenuBar.x = app.view.width / 2; // Horizontally center the sprite
+    topMenuBar.y = 100; // Position it 100 pixels from the top
 
 
+    // Add the sprite to the stage
+    app.stage.addChild(topMenuBar);
 }
 
+
+
+// }
+
 // loads mainMenu into global to allow game.js access
- window.mainMenu = mainMenu;
-    
-
-
-
+window.mainMenu = mainMenu;
