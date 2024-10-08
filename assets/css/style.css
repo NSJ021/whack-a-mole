@@ -44,11 +44,7 @@ body{
 }
 
 
-.overlay{
-    width: 95vw;
-    height: 75%;
-    display: block;
-}
+
 
 #gameBoard:hover{
     cursor: url(hammer.png), auto;
@@ -88,4 +84,13 @@ body{
 .moleArea > img:hover{ 
     position: relative;
     top: -81px;
+}
+
+.overlay{
+    background-color: lightgreen;
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: relative;
+    top: -84px;
 }
