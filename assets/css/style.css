@@ -65,3 +65,10 @@ body{
     position: relative;
     top: -81px;
 }
+
+.overlay { 
+    background-color: lightgreen;
+    position: relative;
+    bottom: 85px;
+    height: 60px;
+}
