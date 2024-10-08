@@ -26,7 +26,19 @@ const menuButtons = [
         pressed: './assets/images/sound_off.png',
         toggle: true,
         isPressed: false
+    },
+    {
+        id: 'restart_Image',
+        unpressed: './assets/images/back-unpressed.png',
+        pressed: './assets/images/back-pressed.png'
+    },
+
+    {
+        id: 'settings_Image',
+        unpressed: './assets/images/list-two-unpressed.png',
+        pressed: './assets/images/list-two-pressed.png'
     }
+
 ];
 
 menuButtons.forEach (button => {

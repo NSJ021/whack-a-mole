@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whack A Mole!</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
     <script type="module" src="./assets/js/timer.js"></script>
     <script type="module" src="./assets/js/mainMenu.js"></script>
     <script type="module" src="./assets/js/game.js"></script>
@@ -15,10 +25,12 @@
 </head>
 
 <body>
+    <!-- Gameboard -->
     <div id="gameBoard">
         <div id="infoArea">
-           <div id="gameTimer">Time: <span id="time"><span id="minutes">00</span>:<span id="seconds">00</span></span></div>
-           <div id="scoreArea">Score: <span id="score">0</span></div>
+            <div id="gameTimer">Time: <span id="time"><span id="minutes">00</span>:<span id="seconds">00</span></span>
+            </div>
+            <div id="scoreArea">Score: <span id="score">0</span></div>
 
         </div>
         <div id="innerGame">
@@ -55,16 +67,25 @@
         <div class="mainMenu">
             <div class="menuBar">
                 <ul>
-                    <li class="play_btn"><img src="./assets/images/play-unpressed.png" alt="play button" id="play_Image">
-                    </li>
+                    <li class="restart_btn"><img src="./assets/images/back-unpressed.png" alt="restart button"
+                            id="restart_Image"></li>
+                    <li class="play_btn"><img src="./assets/images/play-unpressed.png" alt="play button"
+                            id="play_Image"></li>
                     <li class="pause_btn"><img src="./assets/images/pause-unpressed.png" alt="pause button"
                             id="pause_Image"></li>
+                    <li class="settings_btn"><img src="./assets/images/list-two-unpressed.png" alt="settings button"
+                            id="settings_Image"></li>
                     <li class="mute_btn"><img src="./assets/images/sound_on.png" alt="mute button" id="mute_Image"></li>
-                    <!-- <li class="vol_slider"><img src="assets/images/play-unpressed.png" alt="volume slider"></li> -->
+
+
                 </ul>
-                <audio id="background_Audio" autoplay loop ><source src="./assets/audio/1min_retroFunk.mp3" type="audio/mp3"><source src="./assets/audio/1min_retroFunk.ogg" type="audio/ogg"></audio>
+                <audio id="background_Audio" loop>
+                    <source src="./assets/audio/1min_retroFunk.mp3" type="audio/mp3">
+                    <source src="./assets/audio/1min_retroFunk.ogg" type="audio/ogg">
+                </audio>
             </div>
         </div>
     </div>
 </body>
+
 </html>
