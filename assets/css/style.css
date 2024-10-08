@@ -21,6 +21,31 @@ body{
     background-position: center; */
     background-color: orange;
     margin: 0 auto;
+    position: absolute;
+    left: 26px;
+    top: 61px;
+}
+
+.menuBar {
+    text-align: center;
+}
+
+.menuBar ul > li{
+    display: inline-block;
+}
+
+.menuBar li img{
+    height: 50px;
+    width: 80px;
+    padding: 20px 75px;
+
+}
+
+.mute_btn{
+    transform: scale(-1, -1);
+}
+
+=======
     width: 95vw;
     height: 75%;
     display: block;
@@ -65,3 +90,4 @@ body{
     position: relative;
     top: -81px;
 }
+
