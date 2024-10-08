@@ -7,14 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-#gameSurround {
-    margin: 0 auto; 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    position: relative;
+    box-sizing: border-box;
 }
 
 #gameSurround > img { 
@@ -22,7 +15,11 @@ body{
 }
 
 #gameBoard{
-    background-color: #8D6E26;
+    /* background-image: url('../images/landscape_blank.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    background-color: orange;
     margin: 0 auto;
     position: absolute;
     left: 26px;
@@ -46,5 +43,51 @@ body{
 
 .mute_btn{
     transform: scale(-1, -1);
+}
+
+=======
+    width: 95vw;
+    height: 75%;
+    display: block;
+}
+
+#gameBoard:hover{
+    cursor: url(hammer.png), auto;
+    
+}
+
+#innerGame {
+    background-color: blue;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.moleRow { 
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.moleArea { 
+    background-color: lightslategray;
+    border: 1px solid black;
+    width: 10%;
+    height: 15%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.moleArea > img { 
+    position: relative;
+    top: -15px;
+    margin: 0 auto;
+}
+
+.moleArea > img:hover{ 
+    position: relative;
+    top: -81px;
 }
 
