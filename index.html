@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whack A Mole!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script type="module" src="./assets/js/timer.js"></script>
     <script type="module" src="./assets/js/mainMenu.js"></script>
     <script type="module" src="./assets/js/game.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -13,7 +17,9 @@
 <body>
     <div id="gameBoard">
         <div id="infoArea">
-            &nbsp;
+           <div id="gameTimer">Time: <span id="time"><span id="minutes">00</span>:<span id="seconds">00</span></span></div>
+           <div id="scoreArea">Score: <span id="score">0</span></div>
+
         </div>
         <div id="innerGame">
             <div class="moleRow">
