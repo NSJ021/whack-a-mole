@@ -64,6 +64,7 @@ body{
 }
 
 #innerGame {
+    /* background: blue url("../images/8bit-background1.jpg") no-repeat center; */
     background-color: blue;
     height: 85%;
     display: flex;
@@ -114,7 +115,7 @@ body{
 }
 
 #restart_Image, #play_Image, #pause_Image, #setting_Image, .moleArea > img { 
-    user-drag: none;
+    /* user-drag: none; */
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
