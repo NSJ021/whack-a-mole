@@ -1,30 +1,38 @@
+
+const audio = document.getElementById('background_Audio');
+var playAudio = () => { 
+    audio.play();
+}
+var pauseAudio = () => { 
+    audio.pause();
+}
+
 /**
  * Start Game Function: Main function for controlling what happens at game start
  */
-function startGame () {
+const startGame = () => {
     
 }
 
 /**
  * Play Game Function: Controls what happens when the play button is pressed
  */
-function playGame(){
-
+const playGame = () => {
+    playAudio();
 }
 
 /**
  * Pause Game Function: Controls what happens when the pause button is pressed
  */
-function pauseGame(){
-
-
+const pauseGame = () => {
+pauseAudio();
     
 }
 
 /**
  * Restart Game Function: Controls what happens when the Restart button is pressed
  */
-function restart(){
+const restart = () => {
 
 }
 
@@ -32,7 +40,6 @@ function restart(){
 /**
  * Settings Function: Controls what happens when the settings button is pressed
  */
-function settings(){
-
+const settings = () => {
 
 }
