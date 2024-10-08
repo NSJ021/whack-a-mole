@@ -1,5 +1,6 @@
 console.log('mainMenu.js running');
 
+const audio = document.getElementById('background_Audio');
 
 const menuButtons = [
     {
@@ -29,6 +30,8 @@ menuButtons.forEach (button => {
         btn.addEventListener('click', () => {
             button.isPressed = !button.isPressed;
             btn.setAttribute('src', button.isPressed ? button.pressed : button.unpressed);
+
+            audio.muted = button.isPressed;
         });
     } else {
 
