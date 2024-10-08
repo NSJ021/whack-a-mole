@@ -48,7 +48,7 @@ body{
 
 
 #gameBoard:hover{
-    cursor: url(hammer.png), auto;
+    cursor: url(../images/hammer.png), auto;
     
 }
 
