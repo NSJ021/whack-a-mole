@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  
-    <div id="gameBoard">
-        <div id="innerGame">
+
+    <div id="gameBoard">  
+            <div id="innerGame">
             <div class="moleRow">
                 <div class="moleArea"><img src="./assets/images/plumber_150.png"><div class="overlay">&nbsp;</div></div>
                 <div class="moleArea"><img src="./assets/images/plumber_150.png"><div class="overlay">&nbsp;</div></div>
@@ -23,11 +25,26 @@
                 <div class="moleArea"><img src="./assets/images/plumber_150.png"><div class="overlay">&nbsp;</div></div>
                 <div class="moleArea"><img src="./assets/images/plumber_150.png"><div class="overlay">&nbsp;</div></div>
             </div>
-        </div>
+        </div>     
     </div>
   
+    <!-- Main Menu -->
+    <div class="mainMenu">
+        <div class="menuBar">
+            <ul>
+                <li class="play_btn"><img src="assets/images/play-unpressed.png" alt="play button"  id="play_Image"></li>
+                <li class="pause_btn"><img src="assets/images/pause-unpressed.png" alt="pause button"  id="pause_Image"></li>
+                <li class="mute_btn"><img src="assets/images/sound_on.png" alt="mute button" id="mute_Image"></li>
+                <!-- <li class="vol_slider"><img src="assets/images/play-unpressed.png" alt="volume slider"></li> -->
+            </ul>
+        </div>
+    </div>
+
+
     <script type="module" src="./assets/js/mainMenu.js"></script>
     <script type="module" src="./assets/js/game.js"></script>
 
+
 </body>
+
 </html>

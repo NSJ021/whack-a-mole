@@ -10,10 +10,6 @@ body{
     box-sizing: border-box;
 }
 
-#gameSurround > img { 
-    width: 100%;
-}
-
 #gameBoard{
     /* background-image: url('../images/landscape_blank.png');
     background-repeat: no-repeat;
@@ -21,6 +17,34 @@ body{
     background-position: center; */
     background-color: orange;
     margin: 0 auto;
+    position: absolute;
+    left: 26px;
+    top: 61px;
+    width: 95%;
+    height: 75%;
+}
+
+.menuBar {
+    text-align: center;
+}
+
+.menuBar ul > li{
+    display: inline-block;
+}
+
+.menuBar li img{
+    height: 50px;
+    width: 80px;
+    padding: 20px 75px;
+
+}
+
+.mute_btn{
+    transform: scale(-1, -1);
+}
+
+
+.overlay{
     width: 95vw;
     height: 75%;
     display: block;
@@ -64,11 +88,4 @@ body{
 .moleArea > img:hover{ 
     position: relative;
     top: -81px;
-}
-
-.overlay { 
-    background-color: lightgreen;
-    position: relative;
-    bottom: 85px;
-    height: 60px;
 }
