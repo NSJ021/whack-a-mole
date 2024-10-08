@@ -17,6 +17,7 @@ function playGame(){
  */
 function pauseGame(){
 
+
     
 }
 
@@ -32,5 +33,6 @@ function restart(){
  * Settings Function: Controls what happens when the settings button is pressed
  */
 function settings(){
+
 
 }
