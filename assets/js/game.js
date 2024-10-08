@@ -25,7 +25,8 @@ const playGame = () => {
  * Pause Game Function: Controls what happens when the pause button is pressed
  */
 const pauseGame = () => {
-    pauseAudio();
+pauseAudio();
+    
 }
 
 /**
