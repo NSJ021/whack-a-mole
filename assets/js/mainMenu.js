@@ -1,10 +1,10 @@
 console.log('mainMenu.js running');
 
 const audio = document.getElementById('background_Audio');
-const playAudio = () => { 
+var playAudio = () => { 
     audio.play();
 }
-const pauseAudio = () => { 
+var pauseAudio = () => { 
     audio.pause();
 }
 
@@ -56,10 +56,10 @@ menuButtons.forEach (button => {
     btn.addEventListener('mousedown', () => {
         btn.setAttribute("src", button.pressed);
         if(button.id === "play_Image"){ 
-            playAudio();
+            audio.play();
         }
         if(button.id === "pause_Image"){ 
-            pauseAudio();
+            audio.pause();
         }
     });
 
@@ -71,4 +71,5 @@ menuButtons.forEach (button => {
         btn.setAttribute("src", button.unpressed);
     });
     }
+
 });
