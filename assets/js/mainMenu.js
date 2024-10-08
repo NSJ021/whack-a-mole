@@ -8,7 +8,6 @@ const pauseAudio = () => {
     audio.pause();
 }
 
-
 const menuButtons = [
     {
         id: 'play_Image',
@@ -72,8 +71,4 @@ menuButtons.forEach (button => {
         btn.setAttribute("src", button.unpressed);
     });
     }
-
-   
-
-
 });
