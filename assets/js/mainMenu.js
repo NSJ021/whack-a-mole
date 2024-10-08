@@ -1,13 +1,7 @@
 console.log('mainMenu.js running');
 
-const audio = document.getElementById('background_Audio');
-var playAudio = () => { 
-    audio.play();
-}
-var pauseAudio = () => { 
-    audio.pause();
-}
 
+// menuButtons object, contains all data for buttons within the main menu bar
 const menuButtons = [
     {
         id: 'play_Image',
@@ -40,10 +34,13 @@ const menuButtons = [
 
 ];
 
+
+// Menu Buttons For Loop, loops through all buttons from menuButtons Object, then toggles image and or additional functionality
 menuButtons.forEach (button => {
 
     const btn = document.getElementById(button.id);
 
+    // If statement for buttons that are toggled, rather than a simple image swap
     if (button.toggle) {
         btn.addEventListener('click', () => {
             button.isPressed = !button.isPressed;
@@ -53,20 +50,29 @@ menuButtons.forEach (button => {
         });
     } else {
 
+    // MouseDown Event listener, with if statements for each button to call respective functions from game.js
     btn.addEventListener('mousedown', () => {
         btn.setAttribute("src", button.pressed);
         if(button.id === "play_Image"){ 
-            audio.play();
+            playGame();
         }
         if(button.id === "pause_Image"){ 
-            audio.pause();
+            pauseGame();
+        }
+        if(button.id === "restart_Image"){
+            restart();
+        }
+        if(button.id === "settings_Image"){
+            settings();
         }
     });
 
+    // MouseUP event listener, toggles image
     btn.addEventListener('mouseup', () => {
         btn.setAttribute("src", button.unpressed);
     });
 
+    // MouseOut event listener, toggles image
     btn.addEventListener('mouseout', () => {
         btn.setAttribute("src", button.unpressed);
     });

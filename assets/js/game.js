@@ -1,38 +1,38 @@
+console.log('Game.js Running');
+
 
 const audio = document.getElementById('background_Audio');
-var playAudio = () => { 
-    audio.play();
-}
-var pauseAudio = () => { 
-    audio.pause();
-}
+
 
 /**
  * Start Game Function: Main function for controlling what happens at game start
  */
 const startGame = () => {
-    
+    console.log('Game Starting ....');
 }
 
 /**
  * Play Game Function: Controls what happens when the play button is pressed
  */
-const playGame = () => {
-    playAudio();
+window.playGame = () => {
+    console.log('Play Button Pressed');
+    audio.play();
 }
 
 /**
  * Pause Game Function: Controls what happens when the pause button is pressed
  */
-const pauseGame = () => {
-pauseAudio();
+window.pauseGame = () => {
+    console.log('Paused Button Pressed');
+    audio.pause();
     
 }
 
 /**
  * Restart Game Function: Controls what happens when the Restart button is pressed
  */
-const restart = () => {
+window.restart = () => {
+    console.log('Restart Pressed');
 
 }
 
@@ -40,6 +40,7 @@ const restart = () => {
 /**
  * Settings Function: Controls what happens when the settings button is pressed
  */
-const settings = () => {
+window.settings = () => {
+    console.log('Settings Pressed');
 
 }
