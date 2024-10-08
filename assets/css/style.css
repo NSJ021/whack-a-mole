@@ -28,3 +28,23 @@ body{
     left: 26px;
     top: 61px;
 }
+
+.menuBar {
+    text-align: center;
+}
+
+.menuBar ul > li{
+    display: inline-block;
+}
+
+.menuBar li img{
+    height: 50px;
+    width: 80px;
+    padding: 20px 75px;
+
+}
+
+.mute_btn{
+    transform: scale(-1, -1);
+}
+
