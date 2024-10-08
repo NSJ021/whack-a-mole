@@ -1,5 +1,12 @@
 console.log('mainMenu.js running');
 
+const audio = document.getElementById('background_Audio');
+var playAudio = () => { 
+    audio.play();
+}
+var pauseAudio = () => { 
+    audio.pause();
+}
 
 // menuButtons object, contains all data for buttons within the main menu bar
 const menuButtons = [
