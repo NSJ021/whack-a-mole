@@ -7,22 +7,31 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
 }
-
-
 
 #gameSurround > img { 
     width: 100%;
 }
 
 #gameBoard{
-    background-image: url('../images/landscape_blank.png');
+    /* background-image: url('../images/landscape_blank.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-
+    background-position: center; */
+    background-color: orange;
     margin: 0 auto;
-    position: absolute;
-    width: 97%;
-    height: 100%
+    width: 95vw;
+    height: 75%;
+    display: block;
+}
+
+#gameBoard:hover{
+    cursor: url(hammer.png), auto;
+    
+}
+
+#innerGame {
+    background-color: blue;
+    height: 85%;
 }
