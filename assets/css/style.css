@@ -8,14 +8,14 @@ body{
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    cursor: url(../images/hammer.png), auto;
+/*  cursor: url(../images/hammer.png), auto; */
 }
 
 body:before {
-    content: '';
-    background: url('../images/hammer_left.png') no-repeat;
-    visibility: hidden;
-    position: absolute;
+content: '';
+background: url('../images/hammer_left.png') no-repeat;
+visibility: hidden;
+position: absolute;
 }
 
 #gameBoard{
@@ -31,7 +31,6 @@ body:before {
     width: 95%;
     height: 75%;
 }
-
 
 .menuBar {
     text-align: center;
@@ -65,10 +64,8 @@ body:before {
     font-size: 32px;
 }
 
-
 #innerGame:hover{
-    
-    
+    cursor: url(../images/hammer.png), auto;
 }
 
 #innerGame {
@@ -79,7 +76,6 @@ body:before {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 
 .moleRow { 
     background-color: lightgreen;
