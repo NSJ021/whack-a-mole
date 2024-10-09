@@ -1,4 +1,4 @@
-console.log('timeer.js has loaded');
+console.log('timer.js has loaded');
 
 
 const secondsOutput = document.getElementById('seconds');

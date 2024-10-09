@@ -19,6 +19,9 @@ window.playGame = () => {
     window.startGameTimer();
     window.activatePlumbers();
     audio.play();
+    // bash_Plumber();
+
+
 }
 
 /**
