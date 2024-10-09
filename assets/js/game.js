@@ -20,8 +20,6 @@ window.playGame = () => {
     window.activatePlumbers();
     audio.play();
     // bash_Plumber();
-
-
 }
 
 /**
@@ -29,9 +27,9 @@ window.playGame = () => {
  */
 window.pauseGame = () => {
     console.log('Paused Button Pressed');
-    window.activatePlumbers();
+    window.pauseGameTimer();
+    window.deactivatePlumbers();
     audio.pause();
-    
 }
 
 /**
