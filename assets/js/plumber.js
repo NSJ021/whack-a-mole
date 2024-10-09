@@ -33,6 +33,5 @@ const deactivatePlumbers = () => {
 };
 
 
-
 window.activatePlumbers = activatePlumbers;
 window.deactivatePlumbers = deactivatePlumbers;
