@@ -102,9 +102,9 @@ body:before {
     margin: 0 auto;
 }
 
-.moleArea > img:hover{ 
-    position: relative;
-    top: -81px;
+.showPlumber{ 
+    position: relative !important;
+    top: -81px !important;
 }
 
 .overlay{

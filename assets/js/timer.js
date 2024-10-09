@@ -44,10 +44,10 @@ const updateTime = () => {
   elapsedTime = Date.now() - startTime; 
   secs = padding(Math.floor((elapsedTime / 1000) % 60));
   mins = padding(Math.floor((elapsedTime / (1000 * 60)) % 60));
-
+  window.showRandomPlumber();
   secondsOutput.innerText = secs;
   minutesOutput.innerText = mins;
-  
+
 }
 
 const padding = (val) => {
@@ -57,3 +57,4 @@ const padding = (val) => {
 window.startGameTimer = startGameTimer;
 window.pauseGameTimer = pauseGameTimer;
 window.resetGameTimer = resetGameTimer;
+

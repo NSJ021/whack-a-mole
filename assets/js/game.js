@@ -3,20 +3,11 @@ console.log('Game.js Running');
 
 const audio = document.getElementById('background_Audio');
 
-const moleAreas = document.getElementsByClassName('moleArea');
-const plumbers = document.getElementsByClassName('plumber');
-
-let isPaused = false
-let intervalId;
-
-
 /**
  * Start Game Function: Main function for controlling what happens at game start
  */
 const startGame = () => {
-    console.log('Game Starting ....');
-    intervalId = setInterval(showRandomMoles, 1000);
-    
+    console.log('Game Starting ....'); 
 }
 
 /**
@@ -50,7 +41,7 @@ window.pauseGame = () => {
         intervalId = setInterval(showRandomMoles, 1000); // Restart the interval
         audio.play();
     }
-    }
+}
     
 
 
@@ -71,38 +62,5 @@ window.settings = () => {
 
 }
 
-// Function to show a random plumber in random mole areas
-function showRandomMoles() {
-    // Only execute if the game is not paused
-    if (isPaused) {
-        return;
-    }
 
-    // First, hide all moles
-    for (let i = 0; i < plumbers.length; i++) {
-        plumbers[i].style.display = 'none'; // Hide all plumbers
-    }
-
-    // Get the currently visible moles
-    const currentlyVisible = Array.from(plumbers).filter(plumber => plumber.style.display === 'block');
-    
-    // If there are already 2 moles visible, do nothing
-    if (currentlyVisible.length >= 1) {
-        return;
-    }
-
-    // Calculate how many new moles to show
-    const molesToShow = 1 - currentlyVisible.length;
-
-    // Randomly show moles
-    const shownIndices = new Set(); // Use a Set to avoid duplicates
-
-    while (shownIndices.size < molesToShow) {
-        const randomIndex = Math.floor(Math.random() * moleAreas.length);
-        if (!shownIndices.has(randomIndex)) {
-            shownIndices.add(randomIndex);
-            plumbers[randomIndex].style.display = 'block'; // Show plumber in the selected mole area
-        }
-    }
-}
 
