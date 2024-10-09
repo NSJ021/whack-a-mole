@@ -11,6 +11,13 @@ body{
     cursor: url(../images/hammer.png), auto;
 }
 
+body:before {
+    content: '';
+    background: url('../images/hammer_left.png') no-repeat;
+    visibility: hidden;
+    position: absolute;
+}
+
 #gameBoard{
     /* background-image: url('../images/landscape_blank.png');
     background-repeat: no-repeat;
