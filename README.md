@@ -1,10 +1,10 @@
 # Whack A Mole
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+Whack A Mole Revamped, a simple clicker game created in Javascript. A slight spin off from the original Whack A Mole, more of a Whack A Plumber.
 
-For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
+General concept of the game, is to click the plumbers as they pop up on the screen with your trustee Hammer themed mouse cursor. The game has a timer, some controls as well as a score.
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Mockup](https://)
 
 ## Design and Wireframes
 
@@ -34,29 +34,24 @@ The revamped version of whack a mole will contain a moderately sized game screen
 
 - __Game Screen__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - The game screen is the main attraction and houses the game itself. This area is the primary function and most interactive portion of the website. 
 
-![Game Screen ](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Game Screen](https://)
 
+- __Game Controls__
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+  - Game controls, this feature allows the user control of starting, pausing, restarting and changing the game settings.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+![Game Controls](https://)
+
 
 ### Features Left to Implement
 
-- Another feature idea
+- Additional/Multiple Levels
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Testing was and is an ongoing process, this is primarily done due the development process. Typically one developer preferred chrome and the other firefox, this unintended method of work enabled us to catch some interesting errors before the game would reach any potential users. E.g. Chrome by default doesn't autoplay sound, where as firefox does. Originally music was to autoplay upon loading the site, chrome unintentionally broken this feature so a rework was required, this was fixed by using the play button for the game to also start the music. Chrome initially required user interaction on the page and autoplay settings to be enabled by the client, by starting the audio when the game is pressed resolved the issue and would then be part of the general gameplay loop regardless.
 
 
 ### Validator Testing 
@@ -84,9 +79,11 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+Coding Credits, this project was created and contributed too by two developers.
+[Nathan Jones](https://github.com/NSJ021)
+[Rob Beach](https://github.com/surfdemon)
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+Contributions were distributed approximately 50% 50% with regard to project progress and coding.
 
 ### Content 
 
@@ -96,25 +93,8 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- Most images are from owned or purchased sources
+- [Freepik](https://www.freepik.com/) was used for some images, primarily backgrounds.
 
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+## Summary
