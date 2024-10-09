@@ -1,8 +1,6 @@
 console.log('timer.js has loaded');
 
 
-
-
 const secondsOutput = document.getElementById('seconds');
 const minutesOutput = document.getElementById('minutes');
 
@@ -14,16 +12,12 @@ let intervalId;
 let mins = 0;
 let secs = 0;
 
-
-
-
 const startGameTimer = () => {
   if( paused ){ 
     paused = false; 
     startTime = Date.now() - elapsedTime;
     intervalId = setInterval(updateTime, 1000)
   }
-    
 }
 
 const pauseGameTimer = () => { 
@@ -53,6 +47,7 @@ const updateTime = () => {
 
   secondsOutput.innerText = secs;
   minutesOutput.innerText = mins;
+  
 }
 
 const padding = (val) => {

@@ -26,6 +26,7 @@ window.playGame = () => {
     console.log('Play Button Pressed');
     startGame();
     window.startGameTimer();
+    window.activatePlumbers();
     audio.play();
     
 }
@@ -35,7 +36,7 @@ window.playGame = () => {
  */
 window.pauseGame = () => {
     console.log('Paused Button Pressed');
-    window.pauseGameTimer();
+    window.activatePlumbers();
     audio.pause();
 
     isPaused = !isPaused; // Toggle the pause state
@@ -67,29 +68,6 @@ window.settings = () => {
     console.log('Settings Pressed');
 
 }
-
-    // Plumber getting hit loop, toggling the hammer rotation
-    // const plumbers = document.getElementsByClassName('plumber');
-
-    // for (var i = 0; i < plumbers.length; i++){
-
-    //     plumbers[i].addEventListener('mousedown', (e) => {
-    //         window.updateGameScore();
-    //         e.target.setAttribute("src", "./assets/images/plumber_hit.png");
-    //         document.body.style.cursor = 'url("./assets/images/hammer_left.png"), auto';
-
-            
-    //     // Holds hammer to the left for .5 seconds, then reverts back to normal hammer
-    //     setTimeout(() => {
-    //         document.body.style.cursor = 'url("./assets/images/hammer.png"), auto';
-    //     }, 500);
-    // });
-
-    // }
-
-
-    // const moleAreas = document.getElementsByClassName('moleArea');
-    // const plumbers = document.getElementsByClassName('plumber');
 
 // Function to show a random plumber in random mole areas
 function showRandomMoles() {
