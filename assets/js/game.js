@@ -37,21 +37,22 @@ window.pauseGame = () => {
     console.log('Paused Button Pressed');
     window.pauseGameTimer();
     window.deactivatePlumbers();
-    audio.pause();
+    
 
     isPaused = !isPaused; // Toggle the pause state
 
     if (isPaused) {
         clearInterval(intervalId); // Stop the interval when paused
+        audio.pause();
         
     } else {
         // Restart the interval only if it's not already running
         intervalId = setInterval(showRandomMoles, 1000); // Restart the interval
-        
+        audio.play();
+    }
     }
     
 
-}
 
 /**
  * Restart Game Function: Controls what happens when the Restart button is pressed
