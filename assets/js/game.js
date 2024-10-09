@@ -104,5 +104,3 @@ function showRandomMoles() {
     }
 }
 
-// Set an interval to show moles every 1 seconds (for example)
-// setInterval(showRandomMoles, 1000);
