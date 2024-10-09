@@ -54,7 +54,7 @@ window.settings = () => {
 
         plumbers[i].addEventListener('mousedown', (e) => {
             console.log("plumber clicked");
-
+            window.updateGameScore();
             e.target.setAttribute("src", "./assets/images/plumber_hit.png");
             console.log("hammer spin");
             document.body.style.cursor = 'url("./assets/images/hammer_left.png"), auto';
