@@ -1,8 +1,18 @@
 console.log('timeer.js has loaded');
 
+
+
+
 const secondsOutput = document.getElementById('seconds');
 const minutesOutput = document.getElementById('minutes');
-let totalSeconds = 0;
+
+let startTime = 0;
+let elapsedTime = 0;
+let currentTime = 0;
+let paused = true;
+let intervalId; 
+let mins = 0;
+let secs = 0;
 
 
 const gameTimer = () => {
