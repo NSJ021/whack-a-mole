@@ -45,33 +45,22 @@ window.settings = () => {
 
 }
 
-// window.hitMole = () => {
-
+// Plumber getting hit loop, toggling the hammer rotation
     const plumbers = document.getElementsByClassName('plumber');
 
     for (var i = 0; i < plumbers.length; i++){
 
         plumbers[i].addEventListener('mousedown', (e) => {
             console.log("plumber clicked")
-            // plumber.style.cursor = 'url("../images/hammer_left.png") 16 16, auto;'
+
             e.target.setAttribute("src", "./assets/images/plumber_hit.png");
-    })
+            console.log("hammer spin")
+            document.body.style.cursor = 'url("./assets/images/hammer_left.png"), auto';
+            
+    });
+
+        plumbers[i].addEventListener('mouseup', () => {
+            document.body.style.cursor = 'url("./assets/images/hammer.png"), auto';
+
+    });
     }
-    
-    
-
-// }
-
-// document.addEventListener('mousemove', (e) => {
-//     hammer.style.left = `${e.pageX - 50}px`;  // Adjust the position based on hammer size
-//     hammer.style.top = `${e.pageY - 50}px`;   // Adjust the position based on hammer size
-// });
-
-// // Rotate the hammer 90 degrees anticlockwise on mousedown
-// document.addEventListener('mousedown', () => {
-//     hammer.style.transform = 'rotate(-90deg)';
-// });
-
-// // Rotate the hammer back to 0 degrees on mouseup
-// document.addEventListener('mouseup', () => {
-//     hammer.style.transform = 'rotate(0deg)';
