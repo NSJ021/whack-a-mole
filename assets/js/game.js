@@ -16,6 +16,7 @@ const startGame = () => {
  */
 window.playGame = () => {
     console.log('Play Button Pressed');
+    window.startGameTimer();
     audio.play();
 }
 
@@ -24,6 +25,7 @@ window.playGame = () => {
  */
 window.pauseGame = () => {
     console.log('Paused Button Pressed');
+    window.pauseGameTimer();
     audio.pause();
     
 }
@@ -33,7 +35,7 @@ window.pauseGame = () => {
  */
 window.restart = () => {
     console.log('Restart Pressed');
-
+    window.resetGameTimer();
 }
 
 
