@@ -8,6 +8,7 @@ body{
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
+    cursor: url(../images/hammer.png), auto;
 }
 
 #gameBoard{
@@ -59,7 +60,7 @@ body{
 
 
 #innerGame:hover{
-    cursor: url(../images/hammer.png), auto;
+    
     
 }
 
