@@ -28,7 +28,6 @@ window.playGame = () => {
     window.startGameTimer();
     window.activatePlumbers();
     audio.play();
-    
 }
 
 /**
@@ -36,7 +35,8 @@ window.playGame = () => {
  */
 window.pauseGame = () => {
     console.log('Paused Button Pressed');
-    window.activatePlumbers();
+    window.pauseGameTimer();
+    window.deactivatePlumbers();
     audio.pause();
 
     isPaused = !isPaused; // Toggle the pause state
@@ -50,6 +50,7 @@ window.pauseGame = () => {
         
     }
     
+
 }
 
 /**
