@@ -18,6 +18,9 @@ window.playGame = () => {
     console.log('Play Button Pressed');
     window.startGameTimer();
     audio.play();
+    // bash_Plumber();
+
+
 }
 
 /**
@@ -47,7 +50,7 @@ window.settings = () => {
 
 }
 
-// Plumber getting hit loop, toggling the hammer rotation
+    // Plumber getting hit loop, toggling the hammer rotation
     const plumbers = document.getElementsByClassName('plumber');
 
     for (var i = 0; i < plumbers.length; i++){
