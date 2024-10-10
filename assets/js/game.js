@@ -1,5 +1,6 @@
 console.log('Game.js Running');
 
+let isPaused = false;
 
 const audio = document.getElementById('background_Audio');
 

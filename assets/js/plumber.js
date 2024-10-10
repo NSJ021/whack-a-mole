@@ -2,13 +2,18 @@
 const plumbers = document.getElementsByClassName('plumber');
 
 const handleEvent = (e) => {
+    let plumber = e.target;
     console.log("plumber clicked");
     window.updateGameScore();
-    e.target.setAttribute("src", "./assets/images/plumber_hit.png");
+    plumber.setAttribute("src", "./assets/images/plumber_hit.png");
     console.log("hammer spin");
     document.getElementById('innerGame').style.cursor = 'url("./assets/images/hammer_left.png"), auto';
     //document.body.style.cursor = 'url("./assets/images/hammer_left.png"), auto';
 
+    setTimeout(() => {
+        plumber.setAttribute("src", "./assets/images/plumber_150.png");
+        console.log(plumber);
+    }, 1000);
 
     // Holds hammer to the left for .5 seconds, then reverts back to normal hammer
     setTimeout(() => {
@@ -19,7 +24,6 @@ const handleEvent = (e) => {
 
 const activatePlumbers = () => {
     for (var i = 0; i < plumbers.length; i++) {
-
         plumbers[i].addEventListener('mousedown', handleEvent);
     }
 };
@@ -29,20 +33,14 @@ const deactivatePlumbers = () => {
     for (var i = 0; i < plumbers.length; i++) {
         console.log('decativating plumbers');
         plumbers[i].removeEventListener('mousedown', handleEvent);
-
     }
 };
-
-
 
 let isPaused = false;
 let intervalId;
 
-
 const showPlumber = () => { 
     
-
-
 }
 
 
