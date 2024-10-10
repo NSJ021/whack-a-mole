@@ -25,7 +25,7 @@ const menuButtons = [
         unpressed: './assets/images/sound_on.png',
         pressed: './assets/images/sound_off.png',
         toggle: true,
-        isPressed: false
+        isPressed: true
     },
     {
         id: 'restart_Image',
