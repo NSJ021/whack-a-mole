@@ -77,6 +77,13 @@ The revamped version of whack a mole will contain a moderately sized game screen
 - Additional/Multiple Levels
 - Scoreboard
 
+### Project Board
+
+- Github projects was utilised for the agile and project management aspects of this mini project.
+<p align="center">
+<img src="./assets/images/project-board" alt="Project board image">
+</P>
+
 ## Testing 
 
 Testing was and is an ongoing process, this is primarily done due the development process. Typically one developer preferred chrome and the other firefox, this unintended method of work enabled us to catch some interesting errors before the game would reach any potential users. E.g. Chrome by default doesn't autoplay sound, where as firefox does. Originally music was to autoplay upon loading the site, chrome unintentionally broken this feature so a rework was required, this was fixed by using the play button for the game to also start the music. Chrome initially required user interaction on the page and autoplay settings to be enabled by the client, by starting the audio when the game is pressed resolved the issue and would then be part of the general gameplay loop regardless.
@@ -143,3 +150,6 @@ Contributions were distributed approximately 50% 50% with regard to project prog
 
 
 ## Summary
+
+The primary goal of this project was to practice working as a team as well as using agile principles. The general idea was to remake a game, whack a mole was chosen as the game.
+This project was worked on for 4-5 days, from start to MVP.
