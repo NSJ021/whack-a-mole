@@ -1,14 +1,23 @@
+* { 
+    margin: 0px;
+}
+
 body{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     background-image: url('../images/page-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-/*  cursor: url(../images/hammer.png), auto; */
+    align-items: center; 
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    margin: 0; 
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body:before {
@@ -16,20 +25,31 @@ content: '';
 background: url('../images/hammer_left.png') no-repeat;
 visibility: hidden;
 position: absolute;
+overflow: hidden;
+height: 100%;
+width: 100%;
+margin: 0; 
+}
+
+h1 { 
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+    color: white; 
+    position: absolute;
+    top: 0px; 
+    margin-top: 90px;
 }
 
 #gameBoard{
-    /* background-image: url('../images/landscape_blank.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
-    /* background-color: orange; */
     margin: 0 auto;
     position: absolute;
-    left: 26px;
-    top: 61px;
-    width: 95%;
+    top: 40px;
+    width: 100vw;
     height: 75%;
+    max-width: 1900px;
 }
 
 .menuBar {
@@ -70,8 +90,6 @@ position: absolute;
 }
 
 #innerGame {
-    /* background: blue url("../images/Gameboard-BG1.jpg") no-repeat center;
-    background-color: blue; */
     height: 85%;
     display: flex;
     flex-direction: column;
@@ -79,14 +97,11 @@ position: absolute;
 }
 
 .moleRow { 
-    /* background-color: lightgreen; */
     display: flex;
     justify-content: space-evenly;
 }
 
 .moleArea { 
-    /* background-color: lightslategray; */
-    /* border: 1px solid black; */
     width: 10%;
     height: 15%;
     margin: 0 auto;
@@ -95,30 +110,28 @@ position: absolute;
 
 .moleArea > img { 
     position: relative;
-    top: 28px;
+    width: 110%;
+    top: 192px;
     margin: 0 auto;
 }
 
 .showPlumber{ 
     position: relative !important;
-    top: -70px !important;
+    top: 90px !important;
 }
 
 .overlay{
     background: url("../images/pipe-150.png") no-repeat center;
-    /* background-color: lightgreen; */
-    width: 100%;
-    height: 100px;
+    background-size: contain;
+    width: auto;
+    height: 250px;
     display: block;
     position: relative;
-    top: -77px;
+    top: 0px;
+    margin: 0
 }
 
-#infoArea { 
-    /* background-color: yellow; */
-    width: 100%;
-    height: 5%;
-}
+
 
 #restart_Image, #play_Image, #pause_Image, #setting_Image, .moleArea > img { 
     user-drag: none;
@@ -128,3 +141,144 @@ position: absolute;
     -webkit-user-select: none;
     -ms-user-select: none;
  } 
+
+ 
+
+ @media screen and (max-width: 768px) {
+    body{ 
+        background-color: orange;
+    }
+
+    #gameBoard { 
+        top: 0px;
+        margin-top: 10px;
+        left: 0px;
+        height: 60%;
+        width: 100%;
+    }
+
+    #infoArea { 
+        margin-bottom: 40px;
+    }
+
+    #gameTimer, #scoreArea { 
+        font-size: 19px;
+    }
+
+    #innerGame { 
+        height: 100%;
+    }
+
+    .moleRow {
+        height: 40px;
+    }
+
+    .moleArea > img { 
+        top: 9px;
+        width: 105px;
+        left: 0px;
+    }
+
+    .overlay { 
+        width: 100px;
+    }
+
+    .showPlumber { 
+        position: relative !important;
+        top: -32px !important;
+    }
+
+    #infoArea { 
+        margin-bottom: 65px;
+    }
+
+    .menuBar li img { 
+        width: none; 
+        padding: 20px 75px;
+    }
+
+    .menuBar > ul { 
+        padding: 0px;
+    }
+
+    .menuBar > ul > li > img { 
+        padding: 15px 50px;
+
+    }
+ }
+
+@media screen and (max-width: 1024px){ 
+    .moleArea > img { 
+        top: 9px;
+        width: 105px;
+        left: 0px;
+    }
+
+    .overlay { 
+        width: 100px;
+    }
+
+    .showPlumber { 
+        position: relative !important;
+        top: -46px !important;
+    }
+}
+
+
+ @media screen and (max-width: 375px) {
+    body{ 
+        background-color: blue;
+    }
+
+    #gameBoard { 
+        top: 15px;
+        left: 0px;
+        height: 65%;
+        width: 100%;
+    }
+
+    #gameTimer, #scoreArea { 
+        font-size: 19px;
+    }
+
+    .moleRow {
+        height: 40px;
+    }
+
+    .moleArea { 
+        margin-left: 5px;
+    }
+
+    .moleArea > img { 
+        top: -11px;
+        width: 100px;
+        left: -6px;
+    }
+
+    .overlay { 
+        width: 82px;
+    }
+
+    .showPlumber { 
+        position: relative !important;
+        top: -32px !important;
+    }
+
+    #infoArea { 
+        margin-bottom: 65px;
+    }
+
+    .menuBar li img { 
+        width: none; 
+        padding: 20px 75px;
+    }
+
+    .menuBar > ul { 
+        padding: 0px;
+    }
+
+    .menuBar > ul > li > img { 
+        padding: 15px 15px;
+
+    }
+ }
