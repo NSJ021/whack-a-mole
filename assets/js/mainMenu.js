@@ -15,11 +15,11 @@ const menuButtons = [
         unpressed: './assets/images/play-unpressed.png',
         pressed: './assets/images/play-pressed.png'
     },
-    {
-        id: 'pause_Image',
-        unpressed: './assets/images/pause-unpressed.png',
-        pressed: './assets/images/pause-pressed.png'
-    },
+    // {
+    //     id: 'pause_Image',
+    //     unpressed: './assets/images/pause-unpressed.png',
+    //     pressed: './assets/images/pause-pressed.png'
+    // },
     {
         id: 'mute_Image',
         unpressed: './assets/images/sound_on.png',
@@ -33,11 +33,11 @@ const menuButtons = [
         pressed: './assets/images/back-pressed.png'
     },
 
-    {
-        id: 'settings_Image',
-        unpressed: './assets/images/list-two-unpressed.png',
-        pressed: './assets/images/list-two-pressed.png'
-    }
+    // {
+    //     id: 'settings_Image',
+    //     unpressed: './assets/images/list-two-unpressed.png',
+    //     pressed: './assets/images/list-two-pressed.png'
+    // }
 
 ];
 
@@ -62,15 +62,15 @@ menuButtons.forEach (button => {
         if(button.id === "play_Image"){ 
             playGame();
         }
-        if(button.id === "pause_Image"){ 
-            pauseGame();
-        }
+        // if(button.id === "pause_Image"){ 
+        //     pauseGame();
+        // }
         if(button.id === "restart_Image"){
             restart();
         }
-        if(button.id === "settings_Image"){
-            settings();
-        }
+        // if(button.id === "settings_Image"){
+        //     settings();
+        // }
     });
 
     // MouseUP event listener, toggles image

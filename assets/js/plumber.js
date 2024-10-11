@@ -43,19 +43,23 @@ const showPlumber = () => {
     
 }
 
+const hideAllPlumbers = () => {
+    for (let i = 0; i < plumbers.length; i++) {
+        plumbers[i].classList.remove('showPlumber'); // Hide all plumbers
+    }
+
+}
 
 
 // Function to show a random plumber in random mole areas
-function showRandomPlumber() {
+const showRandomPlumber = () => {
     // Only execute if the game is not paused
     if (isPaused) {
         return;
     }
 
     // First, hide all moles
-     for (let i = 0; i < plumbers.length; i++) {
-         plumbers[i].classList.remove('showPlumber'); // Hide all plumbers
-     }
+    hideAllPlumbers() 
 
     // Get the currently visible moles
     const currentlyVisible = Array.from(plumbers).filter(plumber => plumber.style.display === 'block');
@@ -91,7 +95,7 @@ function showRandomPlumber() {
 
 
 
-
+window.hideAllPlumbers = hideAllPlumbers;
 window.activatePlumbers = activatePlumbers;
 window.deactivatePlumbers = deactivatePlumbers;
 window.showRandomPlumber = showRandomPlumber;
