@@ -137,7 +137,7 @@ h1 {
 
 
 #restart_Image, #play_Image, #pause_Image, #setting_Image, .moleArea > img { 
-    user-drag: none;
+    
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -217,7 +217,7 @@ h1 {
     }
 
     .menuBar li img { 
-        width: none; 
+        
         padding: 20px 75px;
     }
 
@@ -238,7 +238,7 @@ h1 {
     body{ 
         background-color: blue;
         width: 360px;
-        height: 750;
+        height: 750px;
     }
 
     #gameBoard { 
@@ -292,7 +292,7 @@ h1 {
     }
 
     .menuBar li img { 
-        width: none; 
+         
         padding: 20px 75px;
     }
 

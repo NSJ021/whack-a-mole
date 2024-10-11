@@ -5,16 +5,17 @@ Whack A Mole Revamped, a simple clicker game created in Javascript. A slight spi
 General concept of the game, is to click the plumbers as they pop up on the screen with your trustee Hammer themed mouse cursor. The game has a timer, some controls as well as a score.
 
 <p align="center">
-<img src="./assets/images/.png" alt="Responsiveness Image">
+<img src="./assets/images/responsiveness-image.png" alt="Responsiveness Image">
 </P>
 
 <p align="center">
-<img src="./assets/images/.png" alt="Responsiveness Image 2">
+<img src="./assets/images/responsiveness-image-TB.png" alt="Responsiveness Image Tablet">
 </P>
 
 <p align="center">
-<img src="./assets/images/.png" alt="Responsiveness Image 3">
+<img src="./assets/images/responsiveness-image-MB.png" alt="Responsiveness Image Mobile">
 </P>
+
 
 ## Design and Wireframes
 
@@ -50,7 +51,7 @@ The revamped version of whack a mole will contain a moderately sized game screen
   - The game screen is the main attraction and houses the game itself. This area is the primary function and most interactive portion of the website. 
 
 <p align="center">
-<img src="./assets/images/.png" alt="Game Screen Image">
+<img src="./assets/images/game-screen.png" alt="Game Screen Image">
 </P>
 
 - __Game Controls__
@@ -58,7 +59,7 @@ The revamped version of whack a mole will contain a moderately sized game screen
   - Game controls, this feature allows the user control of starting, pausing, restarting and changing the game settings.
 
 <p align="center">
-<img src="./assets/images/.png" alt="Game Controls">
+<img src="./assets/images/game-controls.png" alt="Game Controls">
 </P>
 
 - __Gameplay Elements__
@@ -67,7 +68,7 @@ The revamped version of whack a mole will contain a moderately sized game screen
   - A retro 8-bit funk audio track can be played as well, this is toggled by the speaker icon, by default the audio is muted.
 
 <p align="center">
-<img src="./assets/images/.png" alt="Gameplay Elements">
+<img src="./assets/images/hammer.png" alt="Gameplay Elements">
 </P>
 
 
@@ -75,6 +76,13 @@ The revamped version of whack a mole will contain a moderately sized game screen
 
 - Additional/Multiple Levels
 - Scoreboard
+
+### Project Board
+
+- Github projects was utilised for the agile and project management aspects of this mini project.
+<p align="center">
+<img src="./assets/images/project-board.png" alt="Project board image">
+</P>
 
 ## Testing 
 
@@ -84,9 +92,27 @@ Testing was and is an ongoing process, this is primarily done due the developmen
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official HTML Validator.
+
+<p align="center">
+<img src="./assets/images/html-validator.png" alt="HTML Validator Results">
+</P>
+
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - 2 errors were found when passing through the official CSS Validator.
+  - The errors mentioned can be justified by the following links [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing), [Google Fonts](https://fonts.google.com/share?selection.family=Orbitron:wght@400..900).
+
+<p align="center">
+<img src="./assets/images/css-validator.png" alt="CSS Validator Results">
+</P>
+
+- The images below show how the errors in our CSS code were given via the google fonts links, also the MDN image backs up that the code should be valid.
+
+<p align="center">
+<img src="./assets/images/MDN-css-error.png" alt="CSS Validator Error 1">
+<img src="./assets/images/google-fonts-css-error.png" alt="CSS Validator Error 2">
+</P>
+
 
 ### Unfixed Bugs
 
@@ -124,3 +150,6 @@ Contributions were distributed approximately 50% 50% with regard to project prog
 
 
 ## Summary
+
+The primary goal of this project was to practice working as a team as well as using agile principles. The general idea was to remake a game, whack a mole was chosen as the game.
+This project was worked on for 4-5 days, from start to MVP.
