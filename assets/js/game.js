@@ -14,10 +14,9 @@ window.playGame = () => {
     if (!isPaused) {
         console.log('pausing the game');
         window.pauseGameTimer();
-        window.deactivatePlumbers(); 
+        window.deactivatePlumbers();
         playBtn.setAttribute('src', './assets/images/play-unpressed.png');
-        clearInterval(window.intervalId); // Stop the interval when paused
-        audio.pause();        
+        audio.pause();
     } else {
         // Restart the interval only if it's not already running
         // startGame();
@@ -25,7 +24,6 @@ window.playGame = () => {
         playBtn.setAttribute('src', './assets/images/pause-unpressed.png');
         window.startGameTimer();
         window.activatePlumbers();
-        window.intervalId = setInterval(showRandomPlumber, 1000); // Restart the interval
         audio.play();
     }
 }
