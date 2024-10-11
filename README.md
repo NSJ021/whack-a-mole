@@ -51,7 +51,7 @@ The revamped version of whack a mole will contain a moderately sized game screen
   - The game screen is the main attraction and houses the game itself. This area is the primary function and most interactive portion of the website. 
 
 <p align="center">
-<img src="./assets/images/game-screen.png.png" alt="Game Screen Image">
+<img src="./assets/images/game-screen.png" alt="Game Screen Image">
 </P>
 
 - __Game Controls__
@@ -81,7 +81,7 @@ The revamped version of whack a mole will contain a moderately sized game screen
 
 - Github projects was utilised for the agile and project management aspects of this mini project.
 <p align="center">
-<img src="./assets/images/project-board" alt="Project board image">
+<img src="./assets/images/project-board.png" alt="Project board image">
 </P>
 
 ## Testing 
