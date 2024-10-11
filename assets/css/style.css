@@ -142,7 +142,22 @@ h1 {
     -ms-user-select: none;
  } 
 
- 
+ @media screen and (max-width: 1024px){ 
+    .moleArea > img { 
+        top: 175px;
+        width: 143px;
+        left: -17px;
+    }
+
+    .overlay { 
+        width: 100px;
+    }
+
+    .showPlumber { 
+        position: relative !important;
+        top: -46px !important;
+    }
+}
 
  @media screen and (max-width: 768px) {
     body{ 
@@ -174,13 +189,14 @@ h1 {
     }
 
     .moleArea > img { 
-        top: 9px;
-        width: 105px;
-        left: 0px;
+        top: 28px;
+        width: 138px;
+        left: -17px;
     }
 
     .overlay { 
         width: 100px;
+        top: -140px;
     }
 
     .showPlumber { 
@@ -207,22 +223,7 @@ h1 {
     }
  }
 
-@media screen and (max-width: 1024px){ 
-    .moleArea > img { 
-        top: 9px;
-        width: 105px;
-        left: 0px;
-    }
 
-    .overlay { 
-        width: 100px;
-    }
-
-    .showPlumber { 
-        position: relative !important;
-        top: -46px !important;
-    }
-}
 
 
  @media screen and (max-width: 375px) {
@@ -250,18 +251,19 @@ h1 {
     }
 
     .moleArea > img { 
-        top: -11px;
-        width: 100px;
-        left: -6px;
+        top: 12px;
+        width: 135px;
+        left: -20px;
     }
 
     .overlay { 
         width: 82px;
+        top: -160px;
     }
 
     .showPlumber { 
         position: relative !important;
-        top: -32px !important;
+        top: -62px !important;
     }
 
     #infoArea { 
