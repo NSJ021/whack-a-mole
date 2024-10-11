@@ -4,26 +4,33 @@ Whack A Mole Revamped, a simple clicker game created in Javascript. A slight spi
 
 General concept of the game, is to click the plumbers as they pop up on the screen with your trustee Hammer themed mouse cursor. The game has a timer, some controls as well as a score.
 
-![Responsice Mockup](https://)
+<p align="center">
+<img src="./assets/images/.png" alt="Responsiveness Image">
+</P>
+
+
 
 ## Design and Wireframes
 
 - __Desktop WireFrame__
 
+<p align="center">
 <img src="./assets/images/whack-a-mole-DTWire.png" alt="Desktop wireframe image">
-
+</p>
 <br>
 
 - __Tablet WireFrame__
 
+<p align="center">
 <img src="./assets/images/whack-a-mole-TBWire.png" alt="Desktop wireframe image">
-
+</p>
 <br>
 
 - __Mobile WireFrame__
 
+<p align="center">
 <img src="./assets/images/whack-a-mole-MBWire.png" alt="Desktop wireframe image">
-
+</p>
 <br>
 
 ## Features 
@@ -36,18 +43,32 @@ The revamped version of whack a mole will contain a moderately sized game screen
 
   - The game screen is the main attraction and houses the game itself. This area is the primary function and most interactive portion of the website. 
 
-![Game Screen](https://)
+<p align="center">
+<img src="./assets/images/.png" alt="Game Screen Image">
+</P>
 
 - __Game Controls__
 
   - Game controls, this feature allows the user control of starting, pausing, restarting and changing the game settings.
 
-![Game Controls](https://)
+<p align="center">
+<img src="./assets/images/.png" alt="Game Controls">
+</P>
+
+- __Gameplay Elements__
+
+  - The player is equipped with a hammer, which is then used to whack the plumbers back into their pipes. By doing so this increases their score with every hit.
+  - A retro 8-bit funk audio track can be played as well, this is toggled by the speaker icon, by default the audio is muted.
+
+<p align="center">
+<img src="./assets/images/.png" alt="Gameplay Elements">
+</P>
 
 
 ### Features Left to Implement
 
 - Additional/Multiple Levels
+- Scoreboard
 
 ## Testing 
 
@@ -67,33 +88,32 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+For this project, GitHub Pages was used as the deployment method. GitHub pages allows frontend only applications to be hosted, therefore is suited out project perfectly.
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://nsj021.github.io/whack-a-mole/ 
 
 
 ## Credits 
 
 Coding Credits, this project was created and contributed too by two developers.
-[Nathan Jones](https://github.com/NSJ021)
+[Nathan Jones](https://github.com/NSJ021),
 [Rob Beach](https://github.com/surfdemon)
 
 Contributions were distributed approximately 50% 50% with regard to project progress and coding.
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Content used on this page is primarily images that are referenced below, [Google Fonts](https://fonts.google.com/)
+
 
 ### Media
 
-- Most images are from owned or purchased sources
+- Most images are from owned or purchased sources, [Game Developer Studio](https://www.gamedeveloperstudio.com/)
 - [Freepik](https://www.freepik.com/) was used for some images, primarily backgrounds.
 
 
