@@ -147,18 +147,19 @@ h1 {
 
  @media screen and (max-width: 1024px){ 
     .moleArea > img { 
-        top: 175px;
+        top: 94px;
         width: 143px;
         left: -17px;
     }
 
     .overlay { 
         width: 100px;
+        height: 89px;
     }
 
     .showPlumber { 
         position: relative !important;
-        top: -46px !important;
+        top: 14px !important;
     }
 }
 
@@ -193,7 +194,7 @@ h1 {
     }
 
     .moleArea > img { 
-        top: -20px;
+        top: -47px;
         width: 138px;
         left: -10px;
     }
@@ -205,7 +206,7 @@ h1 {
 
     .showPlumber { 
         position: relative !important;
-        top: -105px !important;
+        top: -128px !important;
     }
 
     #infoArea { 
