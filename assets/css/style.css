@@ -52,6 +52,10 @@ h1 {
     max-width: 1900px;
 }
 
+.mainMenu {
+    margin-top: 40px;
+}
+
 .menuBar {
     text-align: center;
 }
@@ -111,26 +115,25 @@ h1 {
 .moleArea > img { 
     position: relative;
     width: 110%;
-    top: 192px;
+    top: 150px;
     margin: 0 auto;
 }
 
 .showPlumber{ 
     position: relative !important;
-    top: 90px !important;
+    top: 20px !important;
 }
 
 .overlay{
     background: url("../images/pipe-150.png") no-repeat center;
     background-size: contain;
     width: auto;
-    height: 250px;
+    height: 150px;
     display: block;
     position: relative;
     top: 0px;
     margin: 0
 }
-
 
 
 #restart_Image, #play_Image, #pause_Image, #setting_Image, .moleArea > img { 
@@ -180,8 +183,9 @@ h1 {
         font-size: 19px;
     }
 
-    #innerGame { 
-        height: 100%;
+    #innerGame {
+        padding-top: 40px;
+        height: 80%;
     }
 
     .moleRow {
@@ -189,9 +193,9 @@ h1 {
     }
 
     .moleArea > img { 
-        top: 28px;
+        top: -20px;
         width: 138px;
-        left: -17px;
+        left: -10px;
     }
 
     .overlay { 
@@ -201,11 +205,15 @@ h1 {
 
     .showPlumber { 
         position: relative !important;
-        top: -32px !important;
+        top: -105px !important;
     }
 
     #infoArea { 
         margin-bottom: 65px;
+    }
+
+    .mainMenu {
+        margin-top: 20px;
     }
 
     .menuBar li img { 
@@ -229,6 +237,8 @@ h1 {
  @media screen and (max-width: 375px) {
     body{ 
         background-color: blue;
+        width: 360px;
+        height: 750;
     }
 
     #gameBoard { 
@@ -236,6 +246,11 @@ h1 {
         left: 0px;
         height: 65%;
         width: 100%;
+    }
+
+    #innerGame{
+        padding-top: 80px;
+        width: 360px;
     }
 
     #gameTimer, #scoreArea { 
@@ -246,28 +261,34 @@ h1 {
         height: 40px;
     }
 
+    
     .moleArea { 
         margin-left: 5px;
     }
 
     .moleArea > img { 
-        top: 12px;
-        width: 135px;
-        left: -20px;
+        top: -75px;
+        width: 90px;
+        left: 0px;
     }
 
     .overlay { 
         width: 82px;
         top: -160px;
+        height: 90px;
     }
 
     .showPlumber { 
         position: relative !important;
-        top: -62px !important;
+        top: -140px !important;
     }
 
     #infoArea { 
         margin-bottom: 65px;
+    }
+
+    .mainMenu {
+        margin-top: 20px;
     }
 
     .menuBar li img { 
