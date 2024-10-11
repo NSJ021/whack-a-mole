@@ -1,5 +1,3 @@
-console.log('mainMenu.js running');
-
 const audio = document.getElementById('background_Audio');
 var playAudio = () => { 
     audio.play();
@@ -8,80 +6,29 @@ var pauseAudio = () => {
     audio.pause();
 }
 
-// menuButtons object, contains all data for buttons within the main menu bar
-const menuButtons = [
-    {
-        id: 'play_Image',
-        unpressed: './assets/images/play-unpressed.png',
-        pressed: './assets/images/play-pressed.png'
-    },
-    // {
-    //     id: 'pause_Image',
-    //     unpressed: './assets/images/pause-unpressed.png',
-    //     pressed: './assets/images/pause-pressed.png'
-    // },
-    {
-        id: 'mute_Image',
-        unpressed: './assets/images/sound_on.png',
-        pressed: './assets/images/sound_off.png',
-        toggle: true,
-        isPressed: true
-    },
-    {
-        id: 'restart_Image',
-        unpressed: './assets/images/back-unpressed.png',
-        pressed: './assets/images/back-pressed.png'
-    },
 
-    // {
-    //     id: 'settings_Image',
-    //     unpressed: './assets/images/list-two-unpressed.png',
-    //     pressed: './assets/images/list-two-pressed.png'
-    // }
-
-];
+// Connect up bottons to variables 
+let playBtn = document.getElementById('play_Image');
+let resetBtn = document.getElementById('restart_Image');
+let muteBtn = document.getElementById('mute_Image');
 
 
-// Menu Buttons For Loop, loops through all buttons from menuButtons Object, then toggles image and or additional functionality
-menuButtons.forEach (button => {
+// Add click event listener for play button 
+playBtn.addEventListener('click', () => { 
+    window.playGame();
+});
 
-    const btn = document.getElementById(button.id);
+// Add click event listener for restart button 
+resetBtn.addEventListener('click', () => {
+    window.resetGame();
+});
 
-    // If statement for buttons that are toggled, rather than a simple image swap
-    if (button.toggle) {
-        btn.addEventListener('click', () => {
-            button.isPressed = !button.isPressed;
-            btn.setAttribute('src', button.isPressed ? button.pressed : button.unpressed);
-            audio.muted = button.isPressed;
-        });
-    } else {
+// Initiate ispressed to keep track of audio button pressed state
+let isPressed = false; 
 
-    // MouseDown Event listener, with if statements for each button to call respective functions from game.js
-    btn.addEventListener('mousedown', () => {
-        btn.setAttribute("src", button.pressed);
-        if(button.id === "play_Image"){ 
-            playGame();
-        }
-        // if(button.id === "pause_Image"){ 
-        //     pauseGame();
-        // }
-        if(button.id === "restart_Image"){
-            restart();
-        }
-        // if(button.id === "settings_Image"){
-        //     settings();
-        // }
-    });
-
-    // MouseUP event listener, toggles image
-    btn.addEventListener('mouseup', () => {
-        btn.setAttribute("src", button.unpressed);
-    });
-
-    // MouseOut event listener, toggles image
-    btn.addEventListener('mouseout', () => {
-        btn.setAttribute("src", button.unpressed);
-    });
-    }
-
+// Add click event listener for mute button
+muteBtn.addEventListener('click', (e) => {
+    isPressed = !isPressed;
+    e.target.setAttribute('src', isPressed ? './assets/images/sound_on.png' : './assets/images/sound_off.png');
+    audio.muted = isPressed;
 });

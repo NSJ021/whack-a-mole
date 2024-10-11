@@ -88,13 +88,6 @@ const showRandomPlumber = () => {
 
 
 
-
-
-
-
-
-
-
 window.hideAllPlumbers = hideAllPlumbers;
 window.activatePlumbers = activatePlumbers;
 window.deactivatePlumbers = deactivatePlumbers;
