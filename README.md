@@ -8,7 +8,13 @@ General concept of the game, is to click the plumbers as they pop up on the scre
 <img src="./assets/images/.png" alt="Responsiveness Image">
 </P>
 
+<p align="center">
+<img src="./assets/images/.png" alt="Responsiveness Image 2">
+</P>
 
+<p align="center">
+<img src="./assets/images/.png" alt="Responsiveness Image 3">
+</P>
 
 ## Design and Wireframes
 
