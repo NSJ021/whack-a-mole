@@ -28,7 +28,7 @@ let isPressed = false;
 
 // Add click event listener for mute button
 muteBtn.addEventListener('click', (e) => {
-    isPressed = !isPressed;
     e.target.setAttribute('src', isPressed ? './assets/images/sound_on.png' : './assets/images/sound_off.png');
+    isPressed = !isPressed;
     audio.muted = isPressed;
 });
